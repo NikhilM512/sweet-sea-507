@@ -1,0 +1,65 @@
+#footer{
+    width: 100%;
+    height: 222px;
+    background-color: white;
+}
+#footer>#upperBox{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer>#upperBox>div:nth-child(1){
+    margin-left: 111px;
+}
+#footer>#upperBox>div:nth-child(2){
+    margin-right: 111px;
+    display: flex;
+}
+#footer>#upperBox>div:nth-child(2)>p{
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px;
+}
+#footer>#upperBox>div:nth-child(2)>select{
+    font-size: 16px;
+    width:148px ;
+    height: 22px;
+    margin-left: 22px;
+}
+#footer>#bottomBox{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: end;
+}
+#footer>#bottomBox>#LogoBox{
+    width: 25%;
+    margin-top: 22px;
+    height: 44px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 99px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(1)>p{
+    font-size: 14px;
+    color: gray;
+    margin: 17px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(2)>img{
+   height: 22px;
+   margin: 17px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(3)>img{
+    height: 22px;
+    margin: 17px;
+ }
+ #footer>#bottomBox>#LogoBox>div:nth-child(4)>img{
+    height: 22px;
+    margin: 17px;
+ }
+ #footer>#bottomBox>#LogoBox>div>img:hover{
+   cursor: pointer;
+ }
