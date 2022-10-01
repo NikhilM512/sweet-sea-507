@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Sofia", sans-serif;
+}
+body{
+    background-color: #F8F9FA;
+}
+#header{
+    /* position: relative; */
+    /* margin-top: 5px; */
+    background-color: white;
+    height:170px;
+    width:100%;
+    padding: 20px 170px;
+}
+#header h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: rgb(60, 64, 67);
+    text-align: start;
+}
+#header p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(95, 99, 104);
+    margin-top: 8px;
+    text-align: start;
+}
+#register{
+    position: relative;
+    height:360px;
+    width:800px;
+    margin: auto;
+    margin-top: -40px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#googleImg{
+    position: relative;
+    height: 46px;
+    width:251px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    gap:15px;
+    margin-top: 25px;
+    padding-left: 15px;
+    align-items: center;
+}
+#googleImg p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(131, 131, 131);
+}
+#googleImg img{
+    height: 18px;
+    width:18px;
+}
+#register>h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(60, 64, 67);
+    margin-top: 25px;
+    text-align: start;
+}
+#register>input{
+    border: none;
+    display: block;
+    width:75%;
+    padding: 12px;
+    border-bottom: 1px solid grey;
+    transition:  0.3s linear;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+#register>input:focus{
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+#register>p{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(131, 131, 131);
+    margin-top:18px;
+    text-align: start;
+}
+#continue{
+    height:80px;
+    width:800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#continue p{
+    color: gray;
+    font-size: 12px;
+}
+#btn{
+    font-family: "Google Sans", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+	line-height: 20px;
+    text-align: center;
+    background-color: rgb(25, 100, 222);
+    color: rgb(255, 255, 255);
+    height: 40.9755px;
+	width: 92.4501px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s linear;
+}
+#btn:hover{
+    background-color: rgb(23, 78, 166);
+}
