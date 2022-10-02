@@ -1,0 +1,331 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; */
+}
+#header{
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 111px;
+    text-align: start;
+}
+#header>h1{
+    font-weight: lighter;
+    margin-bottom: 7px;
+    font-size:40px;
+    color: #424242;
+}
+#header>P{
+    color: gray
+}
+#topbar{
+    height: 55px;
+    width: 88%;
+    /* border: 1px solid salmon; */
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+#topbar>p{
+    margin-bottom: -3px;
+    font-size: 16px;
+    color: #424242;
+}
+#topbar>p:hover{
+    cursor: pointer;;
+}
+#topbar>p:nth-child(1){
+    text-decoration: underline 2px solid blue;
+}
+#topbar>p:nth-child(2){
+    margin-left:44px ;
+}
+#short{
+    width: 88%;
+    margin: auto;
+    margin-top: 22px;
+}
+#mid-sec{
+    width: 100%;
+    /* border: 1px solid greenyellow; */
+}
+
+#popular_courses{
+    border: 1px solid rgb(242, 242, 242);;
+    width: 100%;
+    height: 777px;
+    background:  rgb(242, 242, 242);
+}
+#popular_courses>p{
+margin-top:66px ;
+color: #1a73e8;
+text-align: center;
+}
+#popular_courses>p:hover{
+cursor: pointer;
+}
+#popular_courses>div{
+    width: 63%;
+    height: auto;
+    margin: auto;
+    /* text-align: center; */
+    /* border: 1px solid teal; */
+}
+#popular_courses>div:nth-child(1){
+  margin-top: 77px;
+   text-align: center;
+}
+#popular_courses>div:nth-child(1)>h1{
+  font-size: 24px;
+  color: #424242;
+  font-weight: 549;
+  margin-bottom: 17px;
+}
+#popular_courses>div:nth-child(1)>p{
+  color:rgb(178, 178, 178);
+  margin-top: -11px;
+}
+#popular_courses>div:nth-child(2){
+   height: 393px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 55px;
+}
+#popular_courses>div:nth-child(2)>div{
+   height: 100%;
+   width: 31%;
+   border-radius: 7px;
+   /* border: 1px solid blue; */
+   background-color: white;
+   padding: 11px;
+ border: 1px solid #ccc;
+}
+#popular_courses>div:nth-child(2)>div:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+#popular_courses>div:nth-child(2)>div>img{
+ width: 100%;
+ height:40%;
+}
+#popular_courses>div:nth-child(2)>div>h2{
+  font-weight:540;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 7px;
+  color: #424242;
+  line-height: 25px;
+}
+#popular_courses>div:nth-child(2)>div>p{
+  color:rgb(150, 150, 150);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+#popular_courses>div:nth-child(2)>div>div{
+/* border: 1px solid greenyellow; */
+width: 100%;
+height: 11%;
+
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(1){
+/* margin-left: 22px; */
+width: 100%;
+height: 50%;
+display: flex;
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(2){
+/* border: 1px solid green; */
+/* margin-top:50px; */
+width: 100%;
+height: 120%;
+display: flex;
+justify-content: end;
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(1)>div{
+/* border: 1px solid gold; */
+width: 40%;
+height: 120%;
+display: flex;
+flex-direction: row;
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(1)>div>img{
+width: 25%;
+height: 110%;
+/* border: 1px solid red; */
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(1)>div>p{
+font-size: 14px;
+width: 75%;
+height: 120%;
+margin-top: 6px;
+color:#424242;
+/* border: 1px solid blueviolet; */
+}
+#popular_courses>div:nth-child(2)>div>div>div:nth-child(2)>img{
+ height: 100%;
+ /* width: 55px; */
+}
+#boxA>div>div:nth-child(2){
+   /* background-color:red; */
+margin-top: 44px;
+}
+#boxB>div>div:nth-child(2){
+   /* background-color:red; */
+margin-top: 44px;
+}
+#boxC>div>div:nth-child(2){
+   /* background-color:red; */
+margin-top: 63px;
+}
+
+#midsec > div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 340px;
+    width: 250px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: white;
+}
+#midsec > div{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    position: relative;
+    transition: 0.2s linear;
+    
+}
+#midsec > div > p{
+    font-size: 14px;
+    color: gray;
+}
+#midsec > div:hover {
+    transform: scale(1.02);
+}
+#midsec>div>h4{
+    font-size: 14px;
+}
+#midsec > div > img {
+    width: 100%;
+}
+#midsec{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 80px;
+    gap:55px;
+}
+
+#footer{
+    width: 100%;
+    height: 222px;
+    background-color: white;
+}
+#footer>#upperBox{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer>#upperBox>div:nth-child(1){
+    margin-left: 111px;
+}
+#footer>#upperBox>div:nth-child(2){
+    margin-right: 111px;
+    display: flex;
+}
+#footer>#upperBox>div:nth-child(2)>p{
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px;
+}
+#footer>#upperBox>div:nth-child(2)>select{
+    font-size: 16px;
+    width:148px ;
+    height: 22px;
+    margin-left: 22px;
+}
+#footer>#bottomBox{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: end;
+}
+#footer>#bottomBox>#LogoBox{
+    width: 25%;
+    margin-top: 22px;
+    height: 44px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 99px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(1)>p{
+    font-size: 14px;
+    color: gray;
+    margin: 17px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(2)>img{
+   height: 22px;
+   margin: 17px;
+}
+#footer>#bottomBox>#LogoBox>div:nth-child(3)>img{
+    height: 22px;
+    margin: 17px;
+ }
+ #footer>#bottomBox>#LogoBox>div:nth-child(4)>img{
+    height: 22px;
+    margin: 17px;
+ }
+ #footer>#bottomBox>#LogoBox>div>img:hover{
+   cursor: pointer;
+ }
+ #Emptybox {
+    width: 80%;
+    /* border: 1px solid #ccc; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    /* padding-top: 13px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#Emptybox > div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 340px;
+    width: 250px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: white;
+    
+}
+#Emptybox > div{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    position: relative;
+    transition: 0.2s linear;
+    
+}
+#Emptybox > div > p{
+    font-size: 14px;
+    color: gray;
+}
+#Emptybox > div:hover {
+    transform: scale(1.02);
+}
+#Emptybox>div>h4{
+    font-size: 14px;
+}
+#Emptybox > div > img {
+    width: 100%;
+}
+
+#Emptybox > a {
+    text-decoration: none;
+}
