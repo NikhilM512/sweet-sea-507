@@ -18,14 +18,14 @@ export const MyLearningPlan=()=>{
             </div>
             <hr />
             <div id={styles.topbar} >
-            <p style={{marginBottom:"7px"}}>In Progress(0)</p>
+            <p style={{marginBottom:"7px"}}>In Progress({cartData.length})</p>
             {/* <p>Completed(0)</p> */}
             <hr/> 
             </div>
             <hr id={styles.short} />
-            <div id={styles.midsec}>
-                {cartData.map((e)=>(
             <div id={styles.Emptybox}>
+                {cartData.map((e)=>(
+            <div >
                 <img src={e.img}></img>
                 <h4>{e.title}</h4>
                 <p>{e.did}</p>

@@ -179,7 +179,7 @@ export const Home=()=>{
                 <p>Who provides the courses?</p>
                 <hr />
                 </div>
-                <button>See All FAQs</button>
+                <button style={{marginTop:"7px"}}>See All FAQs</button>
             </div>
             </div>
 
