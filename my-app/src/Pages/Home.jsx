@@ -1,4 +1,5 @@
 import { Box } from "@chakra-ui/react"
+import { Link } from "react-router-dom"
 // import { Footer } from "../Components/Footer"
 import styles from "./Home.module.css"
    
@@ -18,7 +19,7 @@ export const Home=()=>{
                     skills course in everything from marketing to <br />coding and
                     beyond.
                 </p>
-                <button id={styles.start}>Find your course</button>
+                <Link to='/courses'><button id={styles.start}>Find your course</button></Link>
                 </div>
                 <div>
                 <img 
@@ -179,7 +180,7 @@ export const Home=()=>{
                 <p>Who provides the courses?</p>
                 <hr />
                 </div>
-                <button>See All FAQs</button>
+                <button style={{marginTop:"7px"}}>See All FAQs</button>
             </div>
             </div>
 

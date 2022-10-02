@@ -18,10 +18,12 @@ export const Navbar=()=>{
             <Text pl="22px" color="grey" ml={22}>Certification</Text>
             <Text pl="22px" color="grey" mt={9}>Live Training</Text>
             <Text pl="22px" color="grey" ml="22px">Remote Working</Text>
-            <Menu>
+            <Menu >
             <MenuButton
-                px={22}
+            // border={'1px solid red'}
                 bg="white"
+                ml={"22px"}
+                w={99}
                 color="gray"
                 border="0"
                 position="relative"
@@ -34,7 +36,7 @@ export const Navbar=()=>{
             >
                 More <TriangleDownIcon />
             </MenuButton>
-            <MenuList w='222px' bg='white' shadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
+            <MenuList mt={-33} w='222px' bg='white' shadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'>
                 <MenuItem pl={22} pt='17px' border='0' color='grey' bg='white' fontSize={16} fontWeight='200'>Tools & Resources</MenuItem>
                 <MenuItem pl={22} mt='17px' border='0' color='grey' bg='white' fontSize={16} fontWeight='200'>Help & FAQ's</MenuItem>
                 <MenuItem pl={22} pb={22} mt='17px' border='0' color='grey' bg='white' fontSize={16} fontWeight='200'>Feedback</MenuItem>
@@ -42,7 +44,7 @@ export const Navbar=()=>{
             </Menu>
             <Spacer/>
             <Link to='/sign-in'><Text textDecoration={'none'} pr="22px" fontWeight='633' color="blue">Sign In</Text></Link>
-            <Link to='/register' ><Button h="44px" pl={25}  pr={25} border="0" fontSize="17px" color="white" bg="blue" position={'sticky'} mt={-7}><Text textDecoration={'none'}>Register</Text></Button></Link> 
+            <Link to='/register' ><Button h="44px" pl={25}  pr={25} border="0" fontSize="17px"  color="white" bg="blue" position={'sticky'} mt={-7}><Text textDecoration={'none'}><p style={{textDecoration:"none"}}>Register</p></Text></Button></Link> 
           </HStack>
           
         </Box>
