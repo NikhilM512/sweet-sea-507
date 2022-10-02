@@ -13,24 +13,16 @@ import { CartContextProvider } from './Contexts/CartContext/CartContextProvider'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <CartContextProvider>
-  <CourseContextProvider>
-  <RegisterContextProvider>
-  <SignInContextProvider>
-
-import {SignInContextProvider} from "./Contexts/SignInContext/SignInContextProvider"
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ <CourseContextProvider>
   <RegisterContextProvider>
     <SignInContextProvider>
-
   <BrowserRouter>
     <App />
   </BrowserRouter>
   </SignInContextProvider>
   </RegisterContextProvider>
-
   </CourseContextProvider>
+  </CartContextProvider>
 
 );
 

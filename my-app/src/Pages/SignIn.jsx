@@ -2,15 +2,18 @@ import { Box } from "@chakra-ui/react"
 import styles from "./SignIn.module.css"
 import React from "react";
 import { RegisterContext } from "../Contexts/RegistrationContext/RegisterContextProvider";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { SignInContext } from "../Contexts/SignInContext/SignInContextProvider";
 
 
 export const SignIn=()=>{
 
     const [email,setEmail]=React.useState("");
     const [password,setPassword]=React.useState("");
-    const [auth,setAuth]=React.useState(false)
+    const [auth,setAuth]=React.useState(false);
+    const [isRegister,setIsRegister]=React.useState(false)
     const {state:registerData} =React.useContext(RegisterContext)
+    const {isAuth,setIsAuth} =React.useContext(SignInContext)
 
     const handleSignIn=()=>{
     // console.log("Hello")
@@ -22,13 +25,20 @@ export const SignIn=()=>{
         }
         }
         if(flag===true){
+            setIsAuth(true)
             setAuth(true)
-
-            console.log(auth)
+            console.log(auth,isAuth,"hello")
+        }else{
+            setIsRegister(true)
+            alert("Wrong Credentials")
         }
     }
 
-    console.log(auth,registerData)
+    console.log(auth,registerData,isAuth)
+
+    if(isRegister){
+       return <Navigate to="/register"></Navigate>
+    }
 
     if(auth){
 
@@ -36,8 +46,7 @@ export const SignIn=()=>{
         return <Navigate to="/"></Navigate>
     }
 
-        return <Navigate to="/"></Navigate>
-    }
+ 
 
     return (
         <Box>
@@ -54,26 +63,26 @@ export const SignIn=()=>{
                 />
                 <p>Register with Google</p>
             </div>
+            
             <h3>Or continue with email</h3>
 
-            <input type="text" placeholder="Email" id={styles.email} onChange={(e)=>setEmail(e.target.value)} />
-            <input type="password" placeholder="Password" id={styles.password} onChange={(e)=>setPassword(e.target.value)} />
-            <div id={styles.login}>
-                <p>Forget Password ?</p>
-                <button id={styles.btn} onClick={()=>handleSignIn()}>Sign in</button>
-            <input name="email" value={email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email" id={styles.email} />
-            <input name="password" value={password} onChange={(e)=>setPassword(e.target.value)}  type="password" placeholder="Password" id={styles.password} />
+            <input id={styles.email} name="email" value={email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email"  />
+            <input id={styles.password}  name="password" value={password} onChange={(e)=>setPassword(e.target.value)}  type="password" placeholder="Password"  />
             <div id={styles.login}>
                 <p>Forget Password ?</p>
                 <button id={styles.btn} onClick={handleSignIn}>Sign in</button>
             </div>
             <p>Use 6 or more characters with a mix of letters, numbers & symbols</p>
-            </div>
+            {/* </div> */}
             <div id={styles.continue}>
-            <p>Need an account? <a href="signup.html"> Sign up here.</a></p>
+            <p>Need an account? <Link to="/register"><a href="signup.html"> Sign up here.</a></Link> </p>
              {/* <button id="btn">Continue</button> */}
+            </div>
             </div>
             <div id={styles.footer}></div>
         </Box>
     )
 }
+
+
+

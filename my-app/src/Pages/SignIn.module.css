@@ -99,7 +99,8 @@ body{
     justify-content: space-between;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
-    margin-top: 5px;
+    margin-top: 22px;
+    margin-left: -22px;
 }
 #continue p{
     color: gray;
