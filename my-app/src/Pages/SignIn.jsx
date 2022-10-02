@@ -13,7 +13,7 @@ export const SignIn=()=>{
     const {state:registerData} =React.useContext(RegisterContext)
 
     const handleSignIn=()=>{
-    console.log("Hello")
+    // console.log("Hello")
     let flag=false;
         for(let i=0;i<registerData.length;i++){
         if(registerData[i].email===email && registerData[i].password===password){
