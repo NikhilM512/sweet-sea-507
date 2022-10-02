@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react"
-import { Footer } from "../Components/Footer"
+// import { Footer } from "../Components/Footer"
 import styles from "./Home.module.css"
    
 

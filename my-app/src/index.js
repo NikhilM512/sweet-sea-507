@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { RegisterContextProvider } from './Contexts/RegistrationContext/RegisterContextProvider';
+
 import { SignInContextProvider } from './Contexts/SignInContext/SignInContextProvider';
 import { CourseContextProvider } from './Contexts/CourseContext/CourseContextProvider';
 import { CartContextProvider } from './Contexts/CartContext/CartContextProvider';
@@ -15,13 +16,22 @@ root.render(
   <CourseContextProvider>
   <RegisterContextProvider>
   <SignInContextProvider>
+
+import {SignInContextProvider} from "./Contexts/SignInContext/SignInContextProvider"
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <RegisterContextProvider>
+    <SignInContextProvider>
+
   <BrowserRouter>
     <App />
   </BrowserRouter>
   </SignInContextProvider>
   </RegisterContextProvider>
+
   </CourseContextProvider>
-  </CartContextProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
