@@ -10,10 +10,11 @@ import { Link } from "react-router-dom"
 
 export const Navbar=()=>{
     return (
-        <Box p='6' position={'sticky'} style={{"z-index": 9999999,"top": "1px"}} rounded='md' bg='white' shadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' borderColor='grey.900' height={66}  color='white'>
+        <Box p='6' position={'sticky'} style={{zIndex: 9999999,top: "1px"}} rounded='md' bg='white' shadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' borderColor='grey.900' height={66}  color='white'>
           <HStack pt={7}  h='100%' w="99%" >
            <Link to='/'><Image ml={'-66px'} mr={'-66px'}  w='88%'  align="center" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw"></Image></Link> 
-            <Text  color="grey" pl="22px" >Online Courses</Text>
+            <Link to='/courses'><Text textDecoration={'none'} color="grey" pl="22px" >Online Courses</Text></Link>
+            <Link to='/in_progess' ><Text pl="22px" color="grey" ml={22} >My Learning Plan</Text></Link>
             <Text pl="22px" color="grey" ml={22}>Certification</Text>
             <Text pl="22px" color="grey" mt={9}>Live Training</Text>
             <Text pl="22px" color="grey" ml="22px">Remote Working</Text>
@@ -41,7 +42,7 @@ export const Navbar=()=>{
             </Menu>
             <Spacer/>
             <Link to='/sign-in'><Text textDecoration={'none'} pr="22px" fontWeight='633' color="blue">Sign In</Text></Link>
-            <Link to='/register' ><Button h="44px" pl={25}  pr={25} border="0" fontSize="17px" color="white" bg="blue"><Text textDecoration={'none'}>Register</Text></Button></Link> 
+            <Link to='/register' ><Button h="44px" pl={25}  pr={25} border="0" fontSize="17px" color="white" bg="blue" position={'sticky'} mt={-7}><Text textDecoration={'none'}>Register</Text></Button></Link> 
           </HStack>
           
         </Box>

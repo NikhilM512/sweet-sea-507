@@ -23,15 +23,22 @@ export const SignIn=()=>{
         }
         if(flag===true){
             setAuth(true)
+
+            console.log(auth)
         }
     }
 
     console.log(auth,registerData)
 
     if(auth){
+
+        alert("Sign-In Successfull...!")
         return <Navigate to="/"></Navigate>
     }
-    
+
+        return <Navigate to="/"></Navigate>
+    }
+
     return (
         <Box>
             <div id={styles.navbar}></div>
@@ -48,6 +55,12 @@ export const SignIn=()=>{
                 <p>Register with Google</p>
             </div>
             <h3>Or continue with email</h3>
+
+            <input type="text" placeholder="Email" id={styles.email} onChange={(e)=>setEmail(e.target.value)} />
+            <input type="password" placeholder="Password" id={styles.password} onChange={(e)=>setPassword(e.target.value)} />
+            <div id={styles.login}>
+                <p>Forget Password ?</p>
+                <button id={styles.btn} onClick={()=>handleSignIn()}>Sign in</button>
             <input name="email" value={email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email" id={styles.email} />
             <input name="password" value={password} onChange={(e)=>setPassword(e.target.value)}  type="password" placeholder="Password" id={styles.password} />
             <div id={styles.login}>
