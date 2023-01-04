@@ -20,7 +20,9 @@
 
 ![g3](https://user-images.githubusercontent.com/105916881/210522105-28d645fa-2253-4128-bfc0-fe2019d6ea95.png)
 
-![g4](https://us![Uploading g3.png…]()
+![g4](https://user-images.githubusercontent.com/105916881/210522252-f3ad39a0-f432-43be-9aab-82389a92c5af.png)
+
+
 er-images.githubusercontent.com/105916881/210522026-77a560b9-7956-4ff6-a958-73376a31d354.png)
 
 
